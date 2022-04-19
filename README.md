@@ -1,3 +1,6 @@
+Este es un proyecto de practica en el cual realice una weather app utilizando ReactJS, hice una peticion a una API para consumir los datos en tiempo real y asi mostrarlos en pantalla con algunos renderizados condicionales.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
