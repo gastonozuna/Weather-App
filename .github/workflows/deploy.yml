@@ -1,0 +1,25 @@
+name: Deploy react app
+on: 
+  push: 
+    branches: 
+      -master
+jobs: 
+  deploy:
+    name: weather app
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: ["12.x"]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with: 
+          node-version: ${{matrix.node-version}}
+      - name: gastonozuna
+        run: /
+          git config --global user.email gastonozuna11@gmail.com
+          git config --global user.name Gaston Ozuna 
+      - name: deploy the app 
+        run: npm run deploy
+        env: 
+            GH_TOKEN: ${{ sectrets.GH_TOKEN }}
