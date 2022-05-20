@@ -22,4 +22,4 @@ jobs:
       - name: deploy the app 
         run: npm run deploy
         env: 
-            GH_TOKEN: ${{ sectrets.GH_TOKEN }}
+            GH_TOKEN: ${{ sectrets.gastonozuna }}
